@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "kit-coldfire_schlib")(type "KiCad")(uri "${KIPRJMOD}/kit-coldfire_schlib.kicad_sym")(options "")(descr ""))
+)

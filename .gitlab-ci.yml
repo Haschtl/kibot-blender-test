@@ -1,0 +1,4 @@
+include:
+  - project: "crescience/ci-templates"
+    ref: "main"
+    file: "deploy_kicad7.yml"

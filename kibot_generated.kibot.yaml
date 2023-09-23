@@ -1,0 +1,22 @@
+# This is a working example.
+# For a more complete reference use `--example`
+kibot:
+  version: 1
+
+global:
+  filters:
+  - number: 1007
+  - number: 1015
+  - number: 58
+
+outputs:
+- name: basic_blender_3dmodels
+  comment: Export blender models
+  type: blender_export
+  dir: 3D
+  options:
+    outputs:
+      - type: "gltf"
+      - type: "blender"
+      - type: "obj"
+      - type: "stl"
