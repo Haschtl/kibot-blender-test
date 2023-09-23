@@ -3,11 +3,11 @@
 kibot:
   version: 1
 
-global:
-  filters:
-  - number: 1007
-  - number: 1015
-  - number: 58
+# global:
+#   filters:
+#   - number: 1007
+#   - number: 1015
+#   - number: 58
 
 outputs:
 - name: basic_blender_3dmodels
