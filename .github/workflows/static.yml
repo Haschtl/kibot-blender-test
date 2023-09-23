@@ -35,6 +35,7 @@ jobs:
         run: |
           echo "$PWD"
           ls -la
+          ls -la /mnt
           blender -v
           kibot -D --out-dir generated 
       - name: Archive production artifacts
