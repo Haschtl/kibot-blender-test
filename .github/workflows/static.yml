@@ -28,9 +28,9 @@ jobs:
     container: ghcr.io/haschtl/kicad7_auto_full_blender:main
     steps:
       - name: Build
-        run: kibot -D --out-dir generated 
-        with:
-          context: .
+        run: |
+          dir
+          kibot -D --out-dir generated 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
