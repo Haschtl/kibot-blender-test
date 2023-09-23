@@ -33,6 +33,7 @@ jobs:
       - name: Build
         #uses: ghcr.io/haschtl/kicad7_auto_full_blender:main
         run: |
+          echo "$PWD"
           ls -la
           blender -v
           kibot -D --out-dir generated 
