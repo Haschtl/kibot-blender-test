@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Build
         run: kibot -D --out-dir generated
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
         with:
           name: kibot-output
           path: |
