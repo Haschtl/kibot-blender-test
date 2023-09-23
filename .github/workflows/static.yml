@@ -25,10 +25,13 @@ jobs:
   # Single deploy job since we're just deploying
   build:
     runs-on: ubuntu-latest
-    #container: ghcr.io/haschtl/kicad7_auto_full_blender:main
+    container: 
+      image: ghcr.io/haschtl/kicad7_auto_full_blender:main
+      volumes:
+        - ./:/mnt
     steps:
       - name: Build
-        uses: ghcr.io/haschtl/kicad7_auto_full_blender:main
+        #uses: ghcr.io/haschtl/kicad7_auto_full_blender:main
         run: |
           cd /github/workspace
           ls -la
