@@ -24,7 +24,8 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   build:
-    runs-on: ghcr.io/haschtl/kicad7_auto_full_blender:sha256-3cae79a5796c2f95fcde6f8af3b5d4954d319c9e98cadb7c8a500d48d56017aa.sig
+    runs-on: ubuntu-latest
+    image: ghcr.io/haschtl/kicad7_auto_full_blender:sha256-3cae79a5796c2f95fcde6f8af3b5d4954d319c9e98cadb7c8a500d48d56017aa.sig
     steps:
       - name: Build
         run: kibot -D --out-dir generated
